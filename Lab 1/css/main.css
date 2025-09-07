@@ -21,7 +21,7 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
-    background-color: rgb(142, 206, 142);
+    background-color: rgb(76, 212, 76);
     height: 10vh;
     font-size: 30px;
 }
@@ -30,11 +30,13 @@
     height: 60vh;
     font-style: oblique;
     font-weight: bold;
+    font-size: 25px;
  }
- #footer{
+ .footer{
     background-color: black;
     color: white;
     height: 24vh;
+    font-size: 14px;
  }
  .footerDiv {
     display: flex;

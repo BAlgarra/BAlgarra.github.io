@@ -13,53 +13,65 @@
 </head>
 <body>
     <header>    
-        <div class="title"> About</div>
+        <div class="aboutTitle"> About</div>
         <nav>
-            <div class="navBar">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
+           <div class="navBar">
+                <div class="navButton">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="currentPageNavButton">
+                <a href="about.html">About</a>
+                </div>
+                <div class="navButton">
+                <a href="contact.html">Contact</a>
+                </div>
             </div>
         </nav>
     </header>
     
-    <section class="mainBody">   
+    <section class="mainBody aboutContent">   
         <br><br>
       <table>
-        <tr>
+        <tr class="tableHeader">
             <th>Programming Language</th>
             <th>Years Experience</th>
         </tr>
-        <tr>
+        <tr class="tableRow">
             <td>Java</td>
             <td>3</td>
         </tr>
-        <tr>
+        <tr class="tableRow">
             <td>C++</td>
             <td>2</td>
         </tr>
-        <tr>
+        <tr class="tableRow">
             <td>Python</td>
             <td>1</td>
         </tr>
       </table>
     </section>
     <br><br>
-    <section> 
-      <h2> <strong>Our Common Hobbies:</strong></h2>
+    <section class="mainContent aboutHobbies"> 
+      <div><h2> <strong>Our Common Hobbies:</strong></h2></div>
       <ul>
         <li>Programming: We all enjoy programming</li>
         <li>Video Games: We all like to play games</li>
-        <li>Music:</li>
+        <li>Music: We all enjoy listening to or playing music</li>
       </ul>
       
     </section>
     <br><br>
     <footer class="footer">
+        <div class="footerDiv">
+            <div style="justify-content: left; width: 50%;">
         <p>CST 336 Internet Programming. 2025©</p>
         <p><strong>Disclaimer:</strong> The information in this webpage is fictitious.</p>
         <p>to be used for academic purposes only.</p>
-         <img src="img/CSUMBLogo.jpg" alt="CSUMB Logo" height="150">
+        </div>
+        <div style="justify-content: right; width: 50%;">
+        <img src="img/CSUMBLogo.jpg" alt="CSUMB Logo" height="150">
+        </div>  
+        </div>
     </footer>
     
 </body>

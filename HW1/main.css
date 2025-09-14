@@ -8,7 +8,7 @@ header {
     height: 18vh;
     font-size: 35px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-image: url("machineLearningImage.jpg");
+    background-image: url("img/machineLearningImage.jpg");
     background-position: center -110px;
     background-size: cover;
     text-shadow: 
@@ -57,7 +57,10 @@ a:hover {
     color: white;
     text-decoration: none;
 }
-
+body {
+  margin: 0;
+  padding: 0; /* optional, removes padding too */
+}
 .mainBody {
     display: flex;
     flex-direction: column;
@@ -70,9 +73,8 @@ a:hover {
 .contentBlock {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    background-color: rgb(160, 119, 42);
+    background-color: rgb(187, 148, 76);
     width: 90%;
     height: 100%;
     text-align: center;
@@ -80,7 +82,47 @@ a:hover {
     font-size: 20px;
     padding: 10px;
     overflow: auto;
-    /* border: 3px solid black; */
     border-left: 3px solid black;
     border-right: 3px solid black;
+}
+.contentBlock h2 {
+    font-size: 50px;
+    text-decoration: underline;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-justify: auto;
+    gap: 40px;
+ 
+}
+.contentBlock p {
+  text-align: justify;
+  text-justify: inter-word;
+  padding-left: 8%;
+  padding-right: 8%;
+  font-size: 22px;
+}
+.footer {
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-top: 2px solid black;
+    overflow: hidden;
+}
+.footer p {
+  margin: 0;        /* removes the default gap */
+  line-height: 1.4; /* optional: controls spacing between lines */
+}
+.footerLeft{
+    text-align: left;
+    padding-left: 20px;
 }

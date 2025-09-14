@@ -11,11 +11,11 @@ header {
     background-image: url("img/machineLearningImage.jpg");
     background-position: center -110px;
     background-size: cover;
-    text-shadow: 
+    text-shadow:
         -4px -4px 0 rgb(54, 128, 197),
-         4px -4px 0 rgb(54, 128, 197),
-        -4px  4px 0 rgb(54, 128, 197),
-         4px  4px 0 rgb(54, 128, 197);
+        4px -4px 0 rgb(54, 128, 197),
+        -4px 4px 0 rgb(54, 128, 197),
+        4px 4px 0 rgb(54, 128, 197);
 }
 
 nav {
@@ -34,7 +34,7 @@ nav {
 
 }
 
-a {
+.navBar {
     display: flex;
     color: white;
     text-decoration: none;
@@ -46,7 +46,7 @@ a {
     text-align: center;
 }
 
-a:hover {
+.navBar:hover {
     background-color: rgb(0, 0, 0);
     color: white;
     text-decoration: none;
@@ -56,11 +56,19 @@ a:hover {
     background-color: rgb(170, 153, 138);
     color: white;
     text-decoration: none;
+    align-content: center;
+    justify-content: center;
+    border-right: 2px solid black;
+    height: 100%;
+    padding-left: 18px;
+    padding-right: 18px;
 }
+
 body {
-  margin: 0;
-  padding: 0; /* optional, removes padding too */
+    margin: 0;
+    padding: 0;
 }
+
 .mainBody {
     display: flex;
     flex-direction: column;
@@ -85,26 +93,30 @@ body {
     border-left: 3px solid black;
     border-right: 3px solid black;
 }
+
 .contentBlock h2 {
     font-size: 50px;
     text-decoration: underline;
 }
-.content{
+
+.content {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     text-justify: auto;
     gap: 40px;
- 
+
 }
+
 .contentBlock p {
-  text-align: justify;
-  text-justify: inter-word;
-  padding-left: 8%;
-  padding-right: 8%;
-  font-size: 22px;
+    text-align: justify;
+    text-justify: inter-word;
+    padding-left: 8%;
+    padding-right: 8%;
+    font-size: 22px;
 }
+
 .footer {
     display: flex;
     background-color: rgb(0, 0, 0);
@@ -113,16 +125,29 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 10vh;
-    font-size: 15px;
+    font-size: 14px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border-top: 2px solid black;
     overflow: hidden;
 }
+
 .footer p {
-  margin: 0;        /* removes the default gap */
-  line-height: 1.4; /* optional: controls spacing between lines */
+    margin: 0;
+    /* removes the default gap */
+    line-height: 1.4;
+    /* optional: controls spacing between lines */
 }
-.footerLeft{
+
+.footerLeft {
     text-align: left;
     padding-left: 20px;
 }
+
+ul li {
+    text-align: left;
+    margin: 4px 0;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.links {}

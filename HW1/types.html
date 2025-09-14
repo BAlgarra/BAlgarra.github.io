@@ -13,22 +13,75 @@
         <h1>Model Types & Techniques</h1>
     </header>
     <nav>
-        <a href="index.html">Home</a>
+        <a class="navBar" href="index.html">Home</a>
         <a class="currentA" href="types.html">Model Types & Techniques</a>
-        <a href="neuralNetworks.html">Neural Networks</a>
-        <a href="applications.html">Applications & Domains</a>
+        <a class="navBar" href="neuralNetworks.html">Neural Networks</a>
+        <a class="navBar" href="applications.html">Applications & Domains</a>
     </nav>
     <div class="mainBody">
         <div class="contentBlock">
-            <h2>Welcome to the Machine Learning Overview Page</h2>
-            <p>This website provides a comprehensive overview of machine learning, including its types, techniques,
-                neural networks, and various applications across different domains. Explore the sections to learn more
-                about how machine learning is transforming industries and driving innovation.</p>
+            <h2>Model Types & Techniques</h2>
+            <br><br>
+            <div class="content">
+                <div style="display: flex; flex-direction: column;">
+                    <p>Machine learning relies on a variety of model types and techniques that allow algorithms to learn
+                        from data in different ways. Broadly, these can be categorized into supervised, unsupervised,
+                        semi-supervised, and reinforcement learning. In supervised learning, models are trained on
+                        labeled data to perform tasks such as classification (predicting categories) or regression
+                        (predicting continuous values). Common supervised models include linear regression, logistic
+                        regression, support vector machines (SVMs), and decision trees. Unsupervised learning, on the
+                        other hand, deals with unlabeled data, with techniques like clustering (e.g., k-means) and
+                        dimensionality reduction (e.g., principal component analysis, or PCA) used to uncover hidden
+                        patterns. Semi-supervised learning combines elements of both, while reinforcement learning
+                        trains agents through trial-and-error interactions with an environment.</p>
+
+                </div>
+                <img src="img/machineAI.jpg" alt="machine learning image" style="width:45%;">
+            </div>
+            <br>
+            <div style="padding: 0 70px;">
+                <p>Another important family of techniques is ensemble learning, which improves performance by combining
+                    multiple models. Methods such as bagging (e.g., random forests), boosting (e.g., AdaBoost, XGBoost),
+                    and stacking leverage the strengths of different models to achieve higher accuracy and robustness.
+                    Probabilistic models, including naïve Bayes classifiers and Bayesian networks, incorporate
+                    probability theory to handle uncertainty in data.</p>
+                <p>In recent years, neural networks and deep learning have become prominent, extending the scope of
+                    model types beyond traditional approaches. Neural networks consist of layers of interconnected nodes
+                    (or “neurons”) that can approximate complex functions. Architectures like convolutional neural
+                    networks (CNNs) excel in image processing, while transformers dominate natural language processing.
+                    These techniques represent a major shift in ML, enabling state-of-the-art performance across domains
+                    such as speech recognition, computer vision, and generative AI.</p>
+                    <br><br>
+                <p><strong>References</strong></p>
+                <ul>
+                    <li> <a href="https://mitpress.mit.edu/9780262043793/introduction-to-machine-learning/"
+                            target="_blank">
+                            Alpaydin, E. (2021). Introduction to Machine Learning (4th ed.). MIT Press.
+                        </a></li>
+                    <li>
+                        <a href="https://www.oreilly.com/library/view/hands-on-machine-learning/9781098125967/"
+                            target="_blank">
+                            Géron, A. (2022). Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow (3rd
+                            ed.). O’Reilly Media.
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        
+            <br><br><br><br>
         </div>
     </div>
 
 
-
+    <footer class="footer">
+        <div class="footerLeft">
+            <p>Created by: Brandon Algarra</p>
+            <p>CST336 Internet Programming</p>
+            <p>School of Computing & Design,</p>
+            <p>California State University, Monterey Bay</p>
+        </div>
+        <img src="img/csumbLogo.png" alt="CSUMB Logo" style="width: 12%; margin-right: 20px;">
+    </footer>
 </body>
 
 </html>

@@ -1,0 +1,86 @@
+header {
+    display: flex;
+    background-color: rgb(48, 48, 168);
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 18vh;
+    font-size: 35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url("machineLearningImage.jpg");
+    background-position: center -110px;
+    background-size: cover;
+    text-shadow: 
+        -4px -4px 0 rgb(54, 128, 197),
+         4px -4px 0 rgb(54, 128, 197),
+        -4px  4px 0 rgb(54, 128, 197),
+         4px  4px 0 rgb(54, 128, 197);
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(146, 119, 93);
+    color: white;
+    text-align: center;
+    justify-content: left;
+    align-items: center;
+    height: 6vh;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 2px solid black;
+
+
+}
+
+a {
+    display: flex;
+    color: white;
+    text-decoration: none;
+    padding-left: 18px;
+    padding-right: 18px;
+    border-right: 2px solid black;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+a:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-decoration: none;
+}
+
+.currentA {
+    background-color: rgb(170, 153, 138);
+    color: white;
+    text-decoration: none;
+}
+
+.mainBody {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(136, 92, 51);
+    height: 80vh;
+}
+
+.contentBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(160, 119, 42);
+    width: 90%;
+    height: 100%;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    overflow: auto;
+    /* border: 3px solid black; */
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+}

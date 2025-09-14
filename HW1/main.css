@@ -150,4 +150,7 @@ ul li {
     padding-right: 4%;
 }
 
-.links {}
+img{
+    border: 2px solid black;
+    border-radius: 8px;
+}

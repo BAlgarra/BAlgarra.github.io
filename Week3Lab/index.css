@@ -1,0 +1,55 @@
+#header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color:white;
+    font-size: 30px;
+}
+.body{
+    display: flex;
+    background-color: rgb(32, 32, 169);
+    height:70vh;
+    justify-content: center;
+    align-items: center;
+}
+#guessingBlock{
+    background-image: url("img/csumb.webp");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    background-color: darkgoldenrod;
+    height:60vh;
+    width:50vw;
+align-items: center;
+}
+#guessMessage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px gray;
+    background-color: rgb(24, 23, 23);
+    color: white;
+    font-size: 25px;
+    width: 50vw;;
+}
+#guessResponse{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+#guessList{
+    background-color: gold;
+    border: 3px;
+    border-color: black;
+    height: 100px;
+    width: 300px;
+}
+#specialMessage{
+    font-size: 80px;
+    background-color: white;
+    color: black;
+
+}

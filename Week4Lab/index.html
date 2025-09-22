@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div style="display: flex; flex-direction: column; align-items: center;">
+        <h2>What is the capital of California?</h2>
+        <div style="display: flex; flex-direction: row; justify-content: center;">
+            <input id="textInput" type="text" width="40vw">
+          
+
+        </div>
+        <p id="textInputResponse"></p>
+
+
+        <h2>What school are we attending?</h2>
+        <div style="display: flex; flex-direction: row;">
+        <input type="radio" id="csumb" name="question2" value="CSUMB">
+        <label for="csumb">CSUMB</label>
+        <input type="radio" id="stanford" name="question2" value="Stanford">
+        <label for="stanford">Stanford</label>
+        <input type="radio" id="deAnza" name="question2" value="De Anza">
+        <label for="deAnza">De Anza</label>
+        </div> 
+        <p id="radioResponse"></p>
+
+         <!-- <input type="checkbox" id="red" name="colors2" value="red">
+        <label for="red">Red</label>
+        <input type="checkbox" id="green" name="colors2" value="green">
+        <label for="green">Green</label>
+        <input type="checkbox" id="blue" name="colors2" value="blue">
+        <label for="blue">Blue</label>
+        <p id="radioResponse"></p> -->
+
+        <h2> What day is today?</h2>
+        <select id="dropdown">
+            <option>Monday</option>
+            <option>Tuesday</option>
+            <option>Wednesday</option>
+            <option>Thursday</option>
+            <option>Friday</option>
+        </select>
+        <p id="dropdownResponse"></p>
+
+        <!-- <input type="radio" id="option1" name="q3-answers" value="2">
+        <label for="option1">1</label>
+<input type="radio" id="option2" name="q3-answers" value="3">
+        <label for="option2">1</label>
+
+        <div id="question3-space"> -->
+
+        
+
+        <h2>What year is it?</h2>
+        <input type="number" id="numberInput" min="2020" max="2030" step="1">
+        <p id="numberResponse"></p>
+
+        <h2>Select all that are NOT blue</h2>
+        <div style="display: flex; flex-direction: row;">
+         <input type="checkbox" id="red" name="question5" value="red">
+        <label for="red">Red</label>
+        <input type="checkbox" id="green" name="question5" value="green">
+        <label for="green">Green</label>
+        <input type="checkbox" id="blue" name="question5" value="blue">
+        <label for="blue">Blue</label>
+        <p id="checkboxResponse"></p>
+        </div>
+          <button id="textInputButton">Submit</button>
+          <p id="totalScore"></p>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/underscore@1.13.7/underscore-umd-min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

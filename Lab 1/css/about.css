@@ -1,7 +1,7 @@
 h2{
     font-family: "Sofia", sans-serif;
 }
-.title {
+.aboutTitle {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,5 +10,34 @@ h2{
     text-align: center;
     font-size: 70px;
     height: 15vh;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: "Sofia", sans-serif;
+}
+.aboutContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tableHeader{
+    background-color: goldenrod;
+    border: 5px solid black;
+}
+.tableRow{
+    background-color: rgb(255, 255, 255);
+    border: 5px solid black;
+}
+table{
+    border: 5px solid black;
+    border-collapse: collapse;
+}
+tr, th, td{
+    border: 3px solid black;
+    gap: 30px;
+    text-align: center;
+}   
+.aboutHobbies{
+    height:30vh; 
+    display:flex; 
+    align-items: center; 
+    justify-content: center; 
+    flex-direction: column;
 }

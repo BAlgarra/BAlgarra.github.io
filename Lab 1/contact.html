@@ -14,30 +14,23 @@
         <div class="title"> Contact Us!</div>
         <nav>
             <div class="navBar">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
+                <div class="navButton">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="navButton">
+                <a href="about.html">About</a>
+                </div>
+                <div class="currentPageNavButton">
+                <a href="contact.html">Contact</a>
+                </div>
             </div>
         </nav>
     </header>
-
-    <br><br>
-    <section>
-        <h1><strong>Contact Page</strong></h1>
-    </section>
-    <br><br>
-    <section>
-        <!-- <ul>
-            <li>Brandon Algarra - balgarra@csumb.edu</li>
-            <li>Kevin Crapo - balgarra@csumb.edu</li>
-            <li>Julio Fernandez - balgarra@csumb.edu</li>
-            <li>Oscar Gonzalez - balgarra@csumb.edu</li>
-        </ul> -->
-
-    </section>
-    <section>
-        <div style="display:flex; flex-direction: column; align-items:center">
-        <h3>Contact Us!</h3>
+   
+    <section class="contactBody">
+        <br><br>
+        <div style="display:flex; flex-direction: column; align-items:center" >
+        <h3>Fill out the form below to contact us!</h3>
         <iframe
             src="https://docs.google.com/forms/d/e/1FAIpQLSfuWXnJ3RNXTuQTVssmMj7NbSU_FFV155ysmFLD3LUz0rlKOg/viewform?embedded=true"
             width="640" 
@@ -48,13 +41,18 @@
             Loading…</iframe>
             </div>
     </section>
-    <br><br>
-    <br><br>
-    <footer class="footer">
+ 
+     <footer class="footer">
+        <div class="footerDiv">
+            <div style="justify-content: left; width: 50%;">
         <p>CST 336 Internet Programming. 2025©</p>
         <p><strong>Disclaimer:</strong> The information in this webpage is fictitious.</p>
         <p>to be used for academic purposes only.</p>
+        </div>
+        <div style="justify-content: right; width: 50%;">
         <img src="img/CSUMBLogo.jpg" alt="CSUMB Logo" height="150">
+        </div>  
+        </div>
     </footer>
 
 </body>

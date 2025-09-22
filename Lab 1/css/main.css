@@ -20,17 +20,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
     background-color: rgb(76, 212, 76);
     height: 10vh;
     font-size: 30px;
 }
  .mainBody {
     background-color: rgb(190, 190, 190);
-    height: 60vh;
+    height: 50vh;
     font-style: oblique;
     font-weight: bold;
     font-size: 25px;
+ }
+ .mainContent {
+  font-size: 25px;
  }
  .footer{
     background-color: black;
@@ -42,3 +45,36 @@
     display: flex;
     flex-direction: row;
  }
+
+.portrait {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.navButton{
+    background-color: goldenrod;
+    color: rgb(43, 43, 194);
+    border: 3px solid black;
+    padding: 8px;
+}
+.currentPageNavButton{
+    background-color: goldenrod;
+    color: rgb(43, 43, 194);
+    border: 5px solid white;
+    padding: 8px;
+}
+.navButton:hover{
+    background-color: rgb(248, 249, 248);
+    color: rgb(0, 0, 0);
+    border: 3px solid black;
+    padding: 8px;
+    cursor: pointer;
+}
+.currentPageNavButton:hover{
+    background-color: rgb(248, 249, 248);
+    color: rgb(0, 0, 0);
+    border: 5px solid white;
+    padding: 8px;
+    cursor: pointer;
+}

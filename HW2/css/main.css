@@ -1,0 +1,50 @@
+body{
+    background-image: url('../img/westernTown.jpg');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(77, 77, 77, 0.562);
+    width: 100vw;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+#main{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    background-color: rgba(136, 127, 26, 0.762);
+    height: 70vh;
+    width: 60vw;
+    color: white;
+}
+h2{
+    font-size: 30px;
+}
+
+#playArea{
+ display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+#wordDisplay{
+    font-size: 30px;
+}
+#feedback{
+    font-size: 20px;
+    font-weight: bold;
+     text-shadow: 
+        -1px -1px 0 black,  
+         1px -1px 0 black,
+        -1px  1px 0 black,
+         1px  1px 0 black;
+}

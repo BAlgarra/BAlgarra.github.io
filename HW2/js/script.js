@@ -10,10 +10,12 @@ let feedback = document.getElementById("feedback");
 let guesses = document.getElementById("allGuesses");
 let secretWord = "";
 let hiddenArray = [];
+let winImage = document.getElementById("winImage");
 document.querySelector("#resetButton").addEventListener("click", gameSetup);
 
 gameSetup();
 function gameSetup() {
+    document.body.style.backgroundImage = "url('img/westernTown.jpg')";
     secretWord = words[Math.floor(Math.random() * words.length)];
     hiddenArray = [];
     remainingAttempts = 6;
@@ -33,6 +35,7 @@ function guess() {
     let guessInput = document.getElementById("playerGuess");
     let letter = guessInput.value.toLowerCase();
     feedback.textContent = "";
+    
 
     if (letter.length !== 1) {
         feedback.textContent = "Please enter a single letter!";
@@ -52,6 +55,17 @@ function guess() {
             }
         }
         wordDisplay.textContent = hiddenArray;
+
+        if (!hiddenArray.includes("_ ")) {
+            document.body.style.backgroundImage = "url('img/congrats.png')";
+            document.body.style.backgroundSize = "cover";
+            feedback.textContent = "You win! The word was: " + secretWord;
+            feedback.style.color = "limegreen";
+            document.querySelector("#resetButton").style.display = "inline";
+            guessButton.style.display = "none";
+            guessInput.value = "";
+            return;
+        }
     } else {
         if (remainingAttempts === 0) {
             feedback.textContent = "Game over!";
@@ -60,7 +74,6 @@ function guess() {
             document.querySelector("#guessButton").style.display = "none";
 
             return;
-
         }
         remainingAttempts--;
         feedback.textContent = "Word does not contain: " + letter;

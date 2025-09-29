@@ -5,7 +5,10 @@ let response1 = document.querySelector("#textInputResponse");
 let question3Options = [1, 2, 3];
 let shuffledOptions = _.shuffle(question3Options);
 let question3Space = document.querySelector("#question3-space");
+let checkboxResponse = document.querySelector("#checkboxResponse");
+let tries = document.querySelector("#tries");
 let currentScore = 0;
+let totalTries = 0;
 //create option 1
 // let radioInput = document.createElement("input");
 // radioInput.id = question3Options[i];
@@ -17,6 +20,12 @@ let currentScore = 0;
 // radioLabel.textContent = question3Options[i];
 // radioLabel.for = question3Options[i];
 // question3Space.appendChild(radioLabel);
+function pageSetup() {
+    totalTries = parseInt(localStorage.getItem("tries")?? "0", 10);
+    tries.textContent = "Total tries: " + totalTries;
+}
+
+pageSetup();
 
 submitButton.addEventListener("click", function () {
     let answer1 = document.querySelector("#textInput").value;
@@ -27,14 +36,13 @@ submitButton.addEventListener("click", function () {
         response1.textContent = "Nope";
     }
 
-    // let answer2 = document.querySelector("input[name=question2]:checked").value;
     let answer2 = document.querySelector('input[name="question2"]:checked')?.value;
     if (answer2 === "CSUMB") {
         document.querySelector("#radioResponse").textContent = "Correct!";
         currentScore += 20;
     }
     let answer3 = document.querySelector("#dropdown").value;
-    if (answer3 === "Thursday") {
+    if (answer3 === "Seaside") {
         document.querySelector("#dropdownResponse").textContent = "Correct!";
         currentScore += 20;
     }
@@ -47,7 +55,7 @@ submitButton.addEventListener("click", function () {
     } else {
         document.querySelector("#numberResponse").textContent = "Nope";
     }
-    // let answer3 = document.querySelectorAll("#colors2").value
+
 
     let checkedBoxes = document.querySelectorAll('input[name="question5"]:checked');
     let answer5 = Array.from(checkedBoxes).map(cb => cb.value);
@@ -60,5 +68,13 @@ submitButton.addEventListener("click", function () {
         currentScore += 20;
     }
     document.querySelector("#totalScore").textContent = "You scored:" + currentScore + "!";
+    if (currentScore >= 80) {
+        document.querySelector("#congrats").textContent = "You scored higher than 80, Congratulations!";
+        document.querySelector("#congrats").style.color = "green";
+    }
+    totalTries++;
+    localStorage.setItem("tries", totalTries);
+    tries.textContent = "Total tries: " + totalTries;
+
 });
 

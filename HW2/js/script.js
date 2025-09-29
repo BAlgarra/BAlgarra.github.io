@@ -4,7 +4,6 @@ let wordDisplay = document.getElementById("wordDisplay");
 let remainingAttempts = 0;
 let correctLetters = 0;
 let guessButton = document.getElementById("guessButton");
-guessButton.addEventListener("click", guess);
 let attempts = document.getElementById("attempts");
 let feedback = document.getElementById("feedback");
 let guesses = document.getElementById("allGuesses");
@@ -12,8 +11,10 @@ let secretWord = "";
 let hiddenArray = [];
 let winImage = document.getElementById("winImage");
 document.querySelector("#resetButton").addEventListener("click", gameSetup);
+guessButton.addEventListener("click", guess);
 
 gameSetup();
+
 function gameSetup() {
     document.body.style.backgroundImage = "url('img/westernTown.jpg')";
     secretWord = words[Math.floor(Math.random() * words.length)];

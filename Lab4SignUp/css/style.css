@@ -1,0 +1,14 @@
+body{
+    background-image: url("../img/mountainBackground.jpg");
+}
+fieldset {
+    background-color: rgba(255, 255, 255, 0.842);
+}
+h1{
+    background-color: rgba(255, 255, 255, 0.726);
+    border: 2px;
+    border-color: black;
+}
+legend {
+    background-color: white;
+}

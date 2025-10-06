@@ -1,0 +1,27 @@
+<h1> Sign Up Form </h1>
+
+<fieldset>
+    <legend>Sign Up</legend>
+    First Name: <input type="text"><br>
+    Last Name: <input type="text"><br>
+    Email: <input type="text"><br>
+    Phone Number:<input type="text"><br><br>
+    Zip Code: <input type="text" id="zipInput"><br>
+    City: <p id="zipCity"></p>
+    <br>
+    Latitude: <p id="zipLat"></p>
+    <br>
+    Longitude: <p id="zipLong"></p>
+    <br><br>
+    State: <select id="statesSelect"></select><br>
+    Select a County: <select id="countySelect"></select><br>
+
+    Desired Username: <input type="text" id="usernameInput"> <p id="usernameValid"></p> <br>
+    Password: <input type="password" id="passwordInput"> <p id="suggestedPassword"></p>  <br>
+    Type Password Again: <input type="password" id="passwordInput2"><br>
+    <input type="submit" value="Sign up!" id="submitInput">
+    <p id="passwordLength"></p>
+    <p id="submitResponse"></p>
+</fieldset>
+
+<script src="js/script.js"></script>

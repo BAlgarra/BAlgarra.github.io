@@ -15,11 +15,11 @@ function submitCheck() {
         submitResponse.textContent += "Username must be at least three characters. "
     }
 
-    if (passData.length < 6) {  
+    if (passData.length < 6) {
         submitResponse.textContent += "Password must be at least six characters. "
         dataIsValid = false;
-    } 
-    if ( passwordInput.value !== passwordInput2.value) {
+    }
+    if (passwordInput.value !== passwordInput2.value) {
         submitResponse.textContent += " Passwords do not match. "
         dataIsValid = false;
     }
@@ -76,6 +76,12 @@ async function zipSetup() {
         document.getElementById("zipCity").textContent = zipData.city;
         document.getElementById("zipLat").textContent = zipData.latitude;
         document.getElementById("zipLong").textContent = zipData.longitude;
+
+        if (!zipData.city || zipData.city === "undefined" || zipData.city === "") {
+            zipCity.textContent = "Zip code not found";
+            zipCity.style.color = "red";
+            return;
+        }
 
 
     } catch (apiError) {
